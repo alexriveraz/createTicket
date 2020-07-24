@@ -1,0 +1,13 @@
+El uso del comando debe ser:
+
+node createWO.js --data <cadena_en_formato_json>
+
+La <cadena_en_formato_json> representa las variables del template cuyo valor se quiere cambiar. Por ejemplo, para usar un login y password diferente para conectarse a Remedy;
+
+node createWO.js --data '{"remedyUsr": "miusuario@kionetworks.com", "remedyPwd": "MiPassword"}'
+
+Para cambiar cambiar la cadena de descripción corta y detallada:
+
+node createWO.js --data '{"shortDescr":"Ticket creado automáticamente por KAI","detailedDescr":"Este es un ticket que ha sido creado usando las capacidades de automatización de KAI."}'
+
+Se puede pasar cualquier combinación y cualquier número de campos a través del parámetro "--data" al script. Desde luego que la creación exitosa del ticket está supeditada a las validaciones internas que haga Remedy sobre los datos proporcionados.
